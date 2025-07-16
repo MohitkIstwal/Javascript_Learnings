@@ -1,0 +1,26 @@
+#counterlabel{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#buttoncontainer{
+    text-align: center;
+}
+
+.but{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: aquamarine;
+    border-radius: 8px;
+
+    /* can change the cursor look eg values help,wait,crosshair etc */
+    cursor: pointer; 
+    transition: all 0.5s;
+}
+
+.but:hover{
+    background-color: rgb(101, 124, 255);
+}
