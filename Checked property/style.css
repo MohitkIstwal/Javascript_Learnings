@@ -1,0 +1,9 @@
+body{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mysubmit{
+    padding: 10px 25px;
+    font-weight: 700;
+}

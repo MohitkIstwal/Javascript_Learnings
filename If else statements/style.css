@@ -1,0 +1,9 @@
+body{
+    font-size: 3em;
+}
+
+#mybutton{
+    padding: 5px 25px;
+    font-style: italic;
+    border: 2px solid black;
+}

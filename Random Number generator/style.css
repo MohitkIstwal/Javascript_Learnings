@@ -1,0 +1,36 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#but{
+    font-size: 3em;
+    background-color: lightcoral;
+    border-radius: 5px;
+    padding: 5px 25px;
+    border: 4px solid black;
+
+    transition: background-color 0s ease-in-out 0s;
+}
+
+#but:active{
+background-color: rgb(241, 49, 49);
+}
+
+.labels{
+    font-size: 1.5em;
+}
+
+#ll{
+    height: 50px;
+    width: 250px; 
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 20px auto; 
+    padding: 0 10px; 
+    border: 2px solid black;
+}
+
