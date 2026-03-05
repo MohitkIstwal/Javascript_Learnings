@@ -1,0 +1,32 @@
+/* lets add some styling to the page we have created using normal css */
+/* remove the error in the below css code */
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h4 {
+    color: green;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #f0f0f0;
+}
