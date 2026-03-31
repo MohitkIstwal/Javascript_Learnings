@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🎮 TIC TAC TOE</h1>
+            
+            <!-- Player Names Section -->
+            <div class="player-names">
+                <div class="name-input-group">
+                    <label>Player X:</label>
+                    <input type="text" id="playerXName" placeholder="Enter name" maxlength="15">
+                </div>
+                <div class="name-input-group">
+                    <label>Player O:</label>
+                    <input type="text" id="playerOName" placeholder="AI" disabled>
+                </div>
+            </div>
+            
+            <!-- Game Statistics -->
+            <div class="stats-board">
+                <div class="stat">
+                    <span class="stat-label" id="player1Label">Player X</span>
+                    <span class="stat-value" id="playerXWins">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Draws</span>
+                    <span class="stat-value" id="drawCount">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label" id="player2Label">Player O</span>
+                    <span class="stat-value" id="playerOWins">0</span>
+                </div>
+            </div>
+            
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="human">👥 Human vs Human</button>
+                <button class="mode-btn" data-mode="ai">🤖 vs AI</button>
+            </div>
+            <div class="difficulty" id="difficulty" style="display: none;">
+                <label>AI Difficulty:</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <div class="move-counter">Move: <span id="moveCount">1</span></div>
+        
+        <div class="status" id="status">Player X's Turn</div>
+        
+        <button class="reset-btn" id="resetBtn">RESET GAME</button>
+        <button class="clear-stats-btn" id="clearStatsBtn">Clear Stats</button>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="moveSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+    <audio id="winSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRiIAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+    
+    <script src="app.js"></script>
+</body>
+</html>
