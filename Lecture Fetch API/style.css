@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #A8D5E3 0%, #FF78AC 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF78AC;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-header {
+    font-size: 40px;
+}
+
+.converter-box {
+    background: #F2F0EA;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    color: #FF78AC;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 2px solid #A8D5E3;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #FF78AC;
+    box-shadow: 0 0 8px rgba(255, 120, 172, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #FF78AC 0%, #A8D5E3 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 120, 172, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button i {
+    font-size: 20px;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #A8D5E3 0%, #F2F0EA 100%);
+    border-radius: 8px;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #FF78AC;
+}
+
+.result p {
+    margin: 8px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.result p strong {
+    color: #FF78AC;
+    font-size: 18px;
+}
+
+.result .icon-result {
+    font-size: 32px;
+    color: #FF78AC;
+    margin-bottom: 10px;
+}
+
+/* Flag Styles */
+.flag-img {
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    width: 24px;
+    height: 18px;
+    border-radius: 2px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.result-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.result-flag-img {
+    width: 50px;
+    height: 38px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 2px solid #FF78AC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flag-separator {
+    font-size: 20px;
+    color: #FF78AC;
+    font-weight: bold;
+}
+
